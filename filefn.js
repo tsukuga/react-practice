@@ -5,7 +5,6 @@ export default class Filefunc extends React.Component{
 
 Getdata(e,callback){
 
-
 // ファイルクラスからreaderインスタンスを生成
 let reader = new FileReader();
 
@@ -18,17 +17,17 @@ let result = reader.readAsText(fileData);
 
   
 reader.onload = () => {
-
- let data = reader.result.split("\n");
-
- let dataArr = [];
+ 
+  // 改行で配列分解
+  let data = reader.result.split("\n");
+  let dataArr = [];
 
   // ","で配列分解   
   for (let i = 0; i < data.length; i++) {
         dataArr[i] = data[i].split("\",\"");
       };
-     
-　// 成績Dを削除 
+
+  // 成績Dを削除 
   for (let t = 0; t < dataArr.length; t++) {
 
         if (dataArr[t][7] == "D") {
@@ -45,16 +44,14 @@ reader.onload = () => {
 
 
   // 必要項目の抽出   
-  let score = dataArr.map(([a, b, number, name, credit, f, g, score, i, j, k]) => ({
+   let score = dataArr.map(([a, b, number, name, credit, f, g, grade, i, j, k]) => ({
         ["科目番号"]:number,
         ["科目名"]:name,
         ["単位数"]:credit,
-        ["成績"]:score
+        ["成績"]:grade
       }))
 
-    
-
-    callback(score);
+  callback(score);
 
    }  
    
