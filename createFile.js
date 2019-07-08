@@ -4,12 +4,14 @@ import Filefunc from './filefn';
 export default class FileForm extends React.Component{
 
 show(e){
-
+ 
+ let score;
  let filefunc = new Filefunc();
- filefunc.Getdata(e,(score)=>{
+ filefunc.Getdata(e,(i)=>{
+   score = i;
    console.log(score);
  });
-
+  
 }
 
 

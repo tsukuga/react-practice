@@ -27,7 +27,7 @@ reader.onload = () => {
   for (let i = 0; i < data.length; i++) {
         dataArr[i] = data[i].split("\",\"");
       };
-     console.log(dataArr);   
+     
 　// 成績Dを削除 
   for (let t = 0; t < dataArr.length; t++) {
 
@@ -42,7 +42,7 @@ reader.onload = () => {
   dataArr.splice(0, 1);
   dataArr.splice(dataArr.length - 1, 1);
 
-   console.log(dataArr);   
+
 
   // 必要項目の抽出   
   let score = dataArr.map(([a, b, number, name, credit, f, g, score, i, j, k]) => ({
