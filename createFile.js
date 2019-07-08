@@ -11,7 +11,8 @@ show(e){
    score = i;
    console.log(score);
  });
-  
+
+   console.log(score);
 }
 
 
