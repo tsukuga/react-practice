@@ -7,9 +7,10 @@ show(e){
  
  let score;
  let filefunc = new Filefunc();
- filefunc.Getdata(e,(i)=>{
-   score = i;
-   console.log(score);
+
+ score = filefunc.Getdata(e,(i)=>{
+   console.log(i);
+   return i;
  });
 
    console.log(score);
