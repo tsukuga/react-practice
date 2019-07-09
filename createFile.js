@@ -17,7 +17,7 @@ show(e){
 
  let score = filefunc.Getdata(e,(i)=>{
    this.setState({data:i});
-   console.log(this.state.data);
+  //  console.log(this.state.data);
  });
 
 }
