@@ -25,4 +25,4 @@ class main extends React.Component{
 
 render(<Main />, document.getElementById('list'));
 render(<FileForm />, document.getElementById('root'));
-render(<FileForm />, document.getElementById('root'));
+render(<Conect />, document.getElementById('root1'));

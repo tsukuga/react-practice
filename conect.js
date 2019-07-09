@@ -5,7 +5,7 @@ import Main from './js/main';
 import './style.css';
 import FileForm from './createFile'
 
-class Conect extends React.Component{
+export default class Conect extends React.Component{
   
   constructor() {
     super();
