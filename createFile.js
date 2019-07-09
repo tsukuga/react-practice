@@ -24,9 +24,13 @@ show(e){
  render(){
 
   return(
+    <div>
     <input className="form-control form" type="file" id="file" size="30"
     onChange = {this.show.bind(this)}
-    />)
+    />
+    <p>{this.state.data}</p>
+    </div>
+    )
    }
 
 }
