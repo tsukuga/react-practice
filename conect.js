@@ -14,12 +14,16 @@ export default class Conect extends React.Component{
       index:'単位数'
     };
   }
+
+  revise(){
+    console.log(this.state.data[1][this.state.index])
+  }
   
   render(){
   return(
     <React.Fragment>
     <FileForm/>
-    <p>{this.state.data[1][this.state.index]}</p>
+    <p onClick ={this.revise.bind(this)}>{this.state.data[1][this.state.index]}</p>
     </React.Fragment>
   )
   }
