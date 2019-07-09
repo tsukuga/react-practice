@@ -14,6 +14,12 @@ class main extends React.Component{
     };
   }
 
+  show();
+
+  show(){
+    console.log(this.state.data);
+  }
+
 }
 
 render(<Main />, document.getElementById('list'));
