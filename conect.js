@@ -16,14 +16,14 @@ export default class Conect extends React.Component{
   }
 
   revise(){
-    console.log(this.state.data[1][this.state.index])
+    this.setState({index:'成績'})
   }
   
   render(){
   return(
     <React.Fragment>
     <FileForm/>
-    <p onClick ={this.revise.bind(this)}>{this.state.data[1][this.state.index]}</p>
+    <div onClick = {this.revise}>{this.state.data[1][this.state.index]}</div>
     </React.Fragment>
   )
   }
