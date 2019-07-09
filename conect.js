@@ -4,24 +4,25 @@ import MakeList from './js/MakeList';
 import Main from './js/main';
 import './style.css';
 import FileForm from './createFile'
-import Conect from './conect'
 
-class main extends React.Component{
+class Conect extends React.Component{
   
   constructor() {
     super();
     this.state = {
-      data: 'React'
+      data: 'React',
+      index:'単位数'
     };
   }
-
-  show();
-
-  show(){
-    console.log(this.state.data);
+  
+  render(){
+  return(
+    <React.Fragment>
+    <FileForm/>
+    <p>{this.state.data[1][this.state.index]}</p>
+    </React.Fragment>
+  )
   }
+  
 
 }
-
-render(<Main />, document.getElementById('list'));
-render(<FileForm />, document.getElementById('root'));
