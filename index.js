@@ -6,22 +6,7 @@ import './style.css';
 import FileForm from './createFile'
 import Conect from './conect'
 
-class main extends React.Component{
-  
-  constructor() {
-    super();
-    this.state = {
-      data: 'React'
-    };
-  }
 
-  show();
-
-  show(){
-    console.log(this.state.data);
-  }
-
-}
 
 render(<Main />, document.getElementById('list'));
 render(<FileForm />, document.getElementById('root'));
