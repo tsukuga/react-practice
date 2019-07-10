@@ -16,7 +16,7 @@ export default class Conect extends React.Component{
   }
 
   revise(){
-    this.setState({index:'成績'})
+     setState({data:this.score})
   }
   
   render(){
