@@ -7,24 +7,24 @@ import FileForm from './createFile'
 
 export default class Conect extends React.Component{
   
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = {
       data: 'React',
       index:'単位数'
     };
   }
 
-  revise(){
-     setState({data:this.score})
-  }
+  
+     
   
   render(){
 
   return(
     <React.Fragment>
-    <FileForm/>
-    <div onClick = {this.revise}>{this.state.data[1][this.state.index]}</div>
+    <FileForm
+    revise = {this.hoge}/>
+    <div>{this.state.data[1][this.state.index]}</div>
     </React.Fragment>
   )
   
