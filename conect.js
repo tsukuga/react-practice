@@ -3,7 +3,7 @@ import { render } from 'react-dom';
 import MakeList from './js/MakeList';
 import Main from './js/main';
 import './style.css';
-import FileForm from './createFile'
+
 
 export default class Conect extends React.Component{
   
@@ -20,7 +20,6 @@ export default class Conect extends React.Component{
 
   return(
     <React.Fragment>
-    <FileForm/>
     <div>{this.state.data}</div>
     <div>{this.props.aaaa}</div>
     </React.Fragment>
