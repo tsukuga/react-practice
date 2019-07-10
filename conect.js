@@ -20,12 +20,14 @@ export default class Conect extends React.Component{
   }
   
   render(){
+
   return(
     <React.Fragment>
     <FileForm/>
     <div onClick = {this.revise}>{this.state.data[1][this.state.index]}</div>
     </React.Fragment>
   )
+  
   }
   
 

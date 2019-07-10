@@ -14,7 +14,9 @@ export default class FileForm extends React.Component{
 show(e){
   
  let filefunc = new Filefunc();
-
+ 
+ this.props.hoge
+ 
  let score = filefunc.Getdata(e,(i)=>{
    this.setState({data:i});
   //  console.log(this.state.data);
