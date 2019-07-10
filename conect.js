@@ -10,23 +10,27 @@ export default class Conect extends React.Component{
   constructor(props) {
     super(props);
     this.state = {
-      data: 'React',
-      index:'単位数'
+      data: '選択されていません',
+      index:'単位数',
+      value:'初期値'
     };
 
     
   }
 
-  
+  setset(e){
+     this.setState({data:e.target.value});
+  }
+
   render(){
     
-   let score = this.props.aaaa;
-    console.log(score);
 
   return(
     <React.Fragment>
     <div>{this.state.data}</div>
     <div></div>
+    <input type = "form"　value ={this.state.data} 
+    onChange = {this.setset.bind(this)}/>
     </React.Fragment>
   )
   
