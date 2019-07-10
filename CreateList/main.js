@@ -10,7 +10,6 @@ export default class Main extends React.Component{
   //  リストクラスからインスタンス生成
    let list= new Lists();
 
-
    return(
     <React.Fragment>
     {Object.keys(list.GetList()).map((e,index) => (

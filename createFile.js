@@ -11,8 +11,7 @@ export default class FileForm extends React.Component{
     };
   }
 
-
-show(e){
+getFile(e){
   
  let filefunc = new Filefunc();
  
@@ -27,10 +26,10 @@ show(e){
   return(
     <div>
     <input className="form-control form" type="file" id="file" size="30"
-    onChange = {this.show.bind(this)}
+    onChange = {this.getFile.bind(this)}
     />
     <div>{this.state.data[1][this.state.index]}</div>
-    <Conect aaaa={this.state.index}/>
+    <Conect aaaa={this.state.data}/>
     </div>
     )
    }
