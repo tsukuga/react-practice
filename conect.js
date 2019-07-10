@@ -16,15 +16,13 @@ export default class Conect extends React.Component{
   }
 
   
-     
-  
   render(){
 
   return(
     <React.Fragment>
-    <FileForm
-    revise = {this.hoge}/>
-    <div>{this.state.data[1][this.state.index]}</div>
+    <FileForm/>
+    <div>{this.state.data}</div>
+    <div>{this.props.aaaa}</div>
     </React.Fragment>
   )
   
