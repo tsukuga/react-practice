@@ -5,10 +5,10 @@ import Main from './js/main';
 import './style.css';
 import FileForm from './createFile'
 import Conect from './conect'
-import parent from './parent'
+import Parent from './parent'
 
 
 render(<Main />, document.getElementById('list'));
 // render(<FileForm />, document.getElementById('root'));
 render(<Conect />, document.getElementById('root1'));
-render(<parent />,document.getElementById('root'));
+render(<Parent />,document.getElementById('root'));

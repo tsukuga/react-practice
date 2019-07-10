@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import child from './child';
 
-class parent extends React.Component {
+class Parent extends React.Component {
   constructor(props) {
     super(props);
 
@@ -17,7 +17,7 @@ class parent extends React.Component {
   render() {
     return (
       <div>
-        <child dataHoge={() => { this.hogeFunc(); }} />
+        <Child dataHoge={() => { this.hogeFunc(); }} />
       </div>
     );
   }

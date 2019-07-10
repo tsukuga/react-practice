@@ -5,7 +5,7 @@ const propTypes = {
   dataHoge: PropTypes.func,
 };
 
-class child extends React.Component {
+class Child extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
