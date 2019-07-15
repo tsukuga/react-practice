@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 import { render } from 'react-dom';
-import MakeList from './CreateList/MakeList';
-import Main from './CreateList/main';
 import './style.css';
 
 

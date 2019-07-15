@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { render } from 'react-dom';
-import makeOption from './makeOption';
+import MakeOption from './makeOption';
 import Lists from './List';
 
 
@@ -13,7 +13,7 @@ export default class MakeList extends React.Component{
    return(
     <React.Fragment>
     {Object.keys(list.GetList()).map((e,index) => (
-      <MakeList value={index} text={e}/>
+      <MakeOption value={index} text={e}/>
     ))}
     </React.Fragment>
    )

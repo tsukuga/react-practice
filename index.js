@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { render } from 'react-dom';
-import MakeList from './CreateList/MakeList';
-import Main from './CreateList/main';
+import MakeList from './CreateList/makeLists';
 import './style.css';
 import FileForm from './createFile'
 import Conect from './conect'
