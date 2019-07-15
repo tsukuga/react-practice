@@ -7,6 +7,6 @@ import FileForm from './createFile'
 import Conect from './conect'
 
 
-render(<Main />, document.getElementById('list'));
+render(<MakeList />, document.getElementById('list'));
 render(<FileForm />, document.getElementById('root'));
 // render(<Conect />, document.getElementById('root1'));
