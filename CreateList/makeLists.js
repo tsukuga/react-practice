@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import { render } from 'react-dom';
-import MakeList from './MakeList';
+import makeOption from './makeOption';
 import Lists from './List';
 
 
-export default class Main extends React.Component{
+export default class MakeList extends React.Component{
   render(){
    
   //  リストクラスからインスタンス生成
