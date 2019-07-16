@@ -1,43 +1,49 @@
 import React, { Component } from 'react';
 import { render } from 'react-dom';
-import MakeOption from './makeOption';
 import Lists from './List';
 import Conect from '../conect';
 
 
-export default class MakeList extends React.Component{
- 
- constructor(props) {
+export default class MakeList extends React.Component {
+
+  constructor(props) {
     super(props);
     this.state = {
-      index:'単位数',
-      value:'国際総合' 
-      }
+      data: [
+        {
+          '科目番号': "number",
+          '科目名': "name",
+          '単位数': "credit",
+          '成績': "grade"
+        }],
+      index: '単位数',
+      value: '国際総合学類/国際関係学/2015'
+    }
   }
 
-   getSelectedList(e){
-    this.setState({value:e.target.value});
-    console.log(this.state.value)
+  getSelectedList(e) {
+    this.setState({ value: e.target.value });
   }
 
-  render(){
-   let list= new Lists();
+  render() {
 
-   return(
-    <React.Fragment>
-    <select onChange = {this.getSelectedList.bind(this)}>
+    let list = new Lists();
 
-    {Object.keys(list.GetList()).map((e,index) => (
-      <MakeOption value={index} text={e}/>
-    ))}
+    return (
+      <React.Fragment>
+        <select onChange={this.getSelectedList.bind(this)}>
 
-    </select> 
+          {Object.keys(list.GetList()).map((e) => (
+            <option value={e}>{e}</option>
+          ))}
 
-    <Conect bbbb={this.state.value}/>
-    </React.Fragment>
-   )
+        </select>
+
+        <Conect bbbb={this.state.value} aaaa={this.state.data} />
+      </React.Fragment>
+    )
   }
 
- 
 
- }
+
+}
