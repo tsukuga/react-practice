@@ -1,19 +1,20 @@
 import React from 'react';
-
+import CreateTd from './createtd';
 export default class Createtable extends React.Component {
 
   render() {
 
-    return (
-      <React.Fragment>
-        <table>
-          <tbody>
-            <tr>
-              {this.props.data.map((e) => (<td>{e}</td>))}
-            </tr>
-          </tbody>
-        </table>
-      </React.Fragment>
-    )
+     return (
+            <React.Fragment>
+            <table>
+             <tbody>
+              {this.props.score.map((e)=>(
+              <tr>
+               <CreateTd td = {e}/>
+              </tr>))}
+             </tbody>
+            </table>
+           </React.Fragment>
+        )
   }
 }

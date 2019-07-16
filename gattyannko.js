@@ -1,20 +1,27 @@
 import React, { Component } from 'react';
 import { render } from 'react-dom';
-import FileForm from '/CreateFrom/createFile';
-import Createtable from '/Createtable/createtable';
+import FileForm from './CreateForm/createFile'
+import Createtable from './Createtable/createtable';
+import Conect from '../conect';
 
 export default class Gattynnko extends React.Component{
   
   constructor() {
     super();
     this.state = {
-      data: [
+      score: [
         {
-          '科目番号': "number",
-          '科目名': "name",
-          '単位数': "credit",
-          '成績': "grade"
-        }],
+          '単位数': "number",
+          '成績': "name",
+          '科目名': "credit",
+          '科目番号': "grade"
+        },{
+          '単位数': "2.0",
+          '成績': "name",
+          '科目名': "credit",
+          '科目番号': "grade"
+        },
+        ],
       index: '単位数'
     };
   }
@@ -23,7 +30,7 @@ export default class Gattynnko extends React.Component{
     return(
       <React.Fragment>
       <FileForm/>
-      <Createtable data ={this.state.data}/>
+      <Createtable score ={this.state.score}/>
       </React.Fragment>
     )
   }

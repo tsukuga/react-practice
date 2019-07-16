@@ -22,17 +22,11 @@ export default class Conect extends React.Component {
 
   }
 
-  // setset(e){
-  //    this.setState({data:e.target.value});
-  // }
-
-  // <input type = "form"　value ={this.state.data} 
-  //   onChange = {this.setset.bind(this)}/>
-
   reset() {
     this.setState({ data: this.props.aaaa })
     //  this.setState({value:this.props.bbbb})
     console.log(this.props.bbbb);
+    console.log(this.props.aaaa);
   }
 
   render() {
