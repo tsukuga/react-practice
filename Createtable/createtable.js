@@ -4,7 +4,6 @@ export default class Createtable extends React.Component {
 
   render() {
 
-    const date = ["aaa", "bbb", "ccc", "ddd", "eee", "fff", "ggg"];
     return (
       <React.Fragment>
         <table>
