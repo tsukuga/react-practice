@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Filefunc from './filefn';
-import Conect from './conect'
+import Conect from '../conect'
 
 export default class FileForm extends React.Component {
   constructor() {

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { render } from 'react-dom';
 import Lists from './List';
-import Conect from '../conect';
+import Conect from './CreateForm/conect';
 
 
 export default class MakeList extends React.Component {
