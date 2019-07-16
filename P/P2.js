@@ -3,8 +3,8 @@ export default class P2 extends React.Component {
   render() {
     return (
       <React.Fragment>
-        {this.props.td.map((e) => (
-          <td>{e}</td>))}
+        {Object.keys(this.props.td).map((key) => (
+          <td>{this.props.td[key]}</td>))}
       </React.Fragment>
     )
   }
