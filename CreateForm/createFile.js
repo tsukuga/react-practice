@@ -21,8 +21,8 @@ export default class FileForm extends React.Component {
 
     let filefunc = new Filefunc();
 
-    let score = filefunc.Getdata(e, (i) => {
-      this.setState({ data: i });
+    let score = filefunc.Getdata(e, (data) => {
+      this.setState({ data: data });
     });
 
   }
