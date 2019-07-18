@@ -8,19 +8,16 @@ export default class MakeList extends React.Component {
 
   constructor(props) {
     super(props);
-    this.state = {
-      data: [],
-      index: '',
-      value: ''
-    }
   }
 
+  // 選択された所属情報を親コンポーネントに渡す
   getSelectedList(e) {
-    this.setState({ value: e.target.value });
+    this.props.getselected(e.target.value);
   }
 
   render() {
-
+    
+    
     let list = new Lists();
 
     return (
