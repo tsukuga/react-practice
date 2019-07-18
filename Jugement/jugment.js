@@ -1,26 +1,22 @@
 import FileFunc from './CreateFrom/filefn'
 import Lists from '../CreateList/List'
 export default class Jugementfunc{
+　
+　
 
   constructor(score,Syozoku){
-    let score = score;
-    let Syozoku = Syozoku;
-
-    console.log(score);
-    console.log(Syozoku);
+    this.score = score;
+    this.Syozoku = Syozoku;
   }
   
   jugement(){
 
     let List = new Lists();
-
-    let Youken = List.GetList();
-    console.log(Youken);
-    console.log(this.Syozoku);
-    let usingYouken = Youken[this.Syozoku];
-
     
-    return usingYouken;
+    // 選択した所属から卒業要件を取得
+    let Youken = List.GetList()[this.Syozoku];
+
+    return Youken;
 
   }
 }

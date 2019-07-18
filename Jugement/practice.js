@@ -21,12 +21,12 @@ export default class Practice extends React.Component {
 
   render() {
 
-    let jugement = new Jugementfunc(this.state.data,this.state.index)
+    let jugement = new Jugementfunc(this.state.data,this.state.value)
     
     let result = jugement.jugement();
 
     return (
-      <div>{result}</div>
+      <div onClick={()=>(console.log(result))}>{'aaaa'}</div>
     )
   }
 
