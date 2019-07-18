@@ -11,7 +11,7 @@ export default class Parent extends React.Component {
     this.state = {
       Prescore: 100,
       score: '',
-      Syozoku:'',
+      Syozoku: '',
     }
   }
 
@@ -23,20 +23,27 @@ export default class Parent extends React.Component {
     this.setState({ score: e })
   }
 
-  GetselectedList(e){
-    this.setState({Syozoku:e})
+  GetselectedList(e) {
+    this.setState({ Syozoku: e })
+  }
+
+  Jugement(){
+    
   }
 
   render() {
     return (
       <React.Fragment>
         <div>{this.state.Prescore}</div>
+
         <Child add={this.Getchild.bind(this)} value={this.state.Prescore} />
+
         <FileForm hoge={this.Getchildscore.bind(this)} />
-        <MakeList getselected={this.GetselectedList.bind(this)}/>
-        <button className="show"type="buttun" onClick={()=>(console.log(this.state.Syozoku))}>
-          show
-        </button>
+
+        <MakeList getselected={this.GetselectedList.bind(this)} />
+
+        <button className="show" type="buttun" 
+        onClick={() => (console.log(this.state))}>show</button>
       </React.Fragment>
     )
   }
