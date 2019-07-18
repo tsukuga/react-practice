@@ -24,9 +24,6 @@ export default class Conect extends React.Component {
 
   reset() {
     this.setState({ data: this.props.aaaa })
-    //  this.setState({value:this.props.bbbb})
-    console.log(this.props.bbbb);
-    console.log(this.props.aaaa);
   }
 
   render() {
@@ -34,8 +31,6 @@ export default class Conect extends React.Component {
 
     return (
       <React.Fragment>
-        <div>{this.state.data[0][this.state.index]}</div>
-        <div>{this.state.value}</div>
         <button type="button" onClick={this.reset.bind(this)}>set反映</button>
       </React.Fragment>
     )

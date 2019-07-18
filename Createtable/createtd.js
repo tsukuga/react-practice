@@ -4,13 +4,7 @@ export default class CreateTd extends React.Component{
   constructor() {
     super();
     this.state = {
-      data: [
-        {
-          '科目番号': "number",
-          '科目名': "name",
-          '単位数': "credit",
-          '成績': "grade"
-        }],
+      data: [],
       index: '単位数'
     };
   }

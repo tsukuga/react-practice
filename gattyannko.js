@@ -29,7 +29,6 @@ export default class Gattynnko extends React.Component{
   render(){
     return(
       <React.Fragment>
-      <FileForm/>
       <Createtable score ={this.state.score}/>
       </React.Fragment>
     )
