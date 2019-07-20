@@ -1,7 +1,7 @@
 import React from 'react';
 import CreateTd from './createtd';
 export default class Createtable extends React.Component {
-
+  
   render() {
 
      return (

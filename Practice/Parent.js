@@ -3,6 +3,8 @@ import { render } from 'react-dom';
 import Child from './Child'
 import FileForm from '../CreateForm/createFile'
 import MakeList from '../CreateList/makeLists'
+import Createtable from '../Createtable/createtable'
+
 
 export default class Parent extends React.Component {
 
@@ -10,7 +12,15 @@ export default class Parent extends React.Component {
     super(props);
     this.state = {
       Prescore: 100,
-      score: '',
+      score: [
+        {
+          '科目番号': "",
+          '科目名': "",
+          '単位数': "",
+          '成績': ""
+        },
+       
+      ],
       Syozoku: '',
     }
   }
@@ -27,23 +37,24 @@ export default class Parent extends React.Component {
     this.setState({ Syozoku: e })
   }
 
-  Jugement(){
-    
+  Jugement() {
+
   }
 
   render() {
     return (
       <React.Fragment>
-      
+
 
         <Child add={this.Getchild.bind(this)} value={this.state.Prescore} />
 
         <FileForm hoge={this.Getchildscore.bind(this)} />
 
         <MakeList getselected={this.GetselectedList.bind(this)} />
-
-        <button className="show" type="buttun" 
-        onClick={() => (console.log(this.state))}>show</button>
+     
+       
+        <button className="show" type="buttun"
+          onClick={() => (console.table(this.state.score))}>show</button>
       </React.Fragment>
     )
   }

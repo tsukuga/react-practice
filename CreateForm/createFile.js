@@ -12,7 +12,7 @@ export default class FileForm extends React.Component {
     let filefunction = new Filefunc();
     
     // 入力された成績ファイルを二次元配列にして親クラスのstateに格納
-    let score = filefunction.Getdata(e, (data) => {
+    filefunction.Getdata(e, (data) => {
       this.props.hoge(data);
     });
 

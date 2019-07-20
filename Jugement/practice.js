@@ -26,7 +26,7 @@ export default class Practice extends React.Component {
     let result = jugement.jugement();
 
     return (
-      <div onClick={()=>(console.log(result))}>{'aaaa'}</div>
+      <div onClick={()=>(console.table(result))}>{'aaaa'}</div>
     )
   }
 
