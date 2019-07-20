@@ -1,3 +1,6 @@
+export default class core {
+
+e(){
 for (let i = 0; i < page.length - 2; i++) {
   
   if (page[i].credit_min > 0) { // 必修科目か判定
@@ -49,5 +52,9 @@ for (let i = 0; i < page.length - 2; i++) {
     };
   };
 };
+}
 
-isHissyuukamoku(class){}
+
+isHissyuukamoku(classname){}
+
+}
