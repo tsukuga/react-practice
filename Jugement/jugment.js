@@ -19,7 +19,8 @@ export default class Jugementfunc {
     return this.makeCategory(Youken);
 
   }
-
+  
+  // 要件に同じカテゴリーごとに番号をフルメソッド
   makeCategory(e) {
 
     let del_number = 0;
@@ -48,7 +49,7 @@ export default class Jugementfunc {
     };
     return M_category;
   }
-  
-   
+
+
 
 }
