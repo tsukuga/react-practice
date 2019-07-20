@@ -9,7 +9,6 @@ import Parent from './Practice/Parent'
 import Practice from './Jugement/practice'
 
 
-render(<MakeList />, document.getElementById('list'));
-render(<FileForm />, document.getElementById('root'));
+
 render(<Parent />, document.getElementById('result'));
 render(<Practice />,document.getElementById('re'))

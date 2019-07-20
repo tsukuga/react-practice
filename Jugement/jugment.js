@@ -17,7 +17,7 @@ export default class Jugementfunc {
     let Youken = List.GetList()[this.Syozoku];
 
 
-    return makeCategory(Youken);
+    return this.makeCategory(Youken);
 
   }
 
@@ -39,11 +39,12 @@ export default class Jugementfunc {
 
           e[j + del_number].No = i;
           del_number++
-
           M_category.splice(j, 1);
           j--;
         };
+
       };
     }
+    return e;
   }
 }

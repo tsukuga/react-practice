@@ -34,7 +34,7 @@ export default class Parent extends React.Component {
   render() {
     return (
       <React.Fragment>
-        <div>{this.state.Prescore}</div>
+      
 
         <Child add={this.Getchild.bind(this)} value={this.state.Prescore} />
 
