@@ -25,7 +25,6 @@ export default class Jugementfunc {
 
     let del_number = 0;
     let category = e.concat();
-
     let M_category = e.concat();
 
     for (let i = 0; i < category.length-1; i++) {
@@ -34,6 +33,7 @@ export default class Jugementfunc {
         if (j > i + 2) { //最適化ポイント
           break;
         };
+
         const check1 = category[i].category1 === category[j].category1;
         const check2 = category[i].category2 === category[j].category2;
         const check3 = category[i].category3 === category[j].category3;
@@ -47,7 +47,7 @@ export default class Jugementfunc {
 
       };
     };
-    return M_category;
+    return category;
   }
 
 

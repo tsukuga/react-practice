@@ -31,10 +31,13 @@ export default class core {
               };
             };
           };
+
           for (let k = 0; k < elements_number.length; k++) { //判定要素ループ
+
             element[k] = page[i][jugelement][k];
             elements[k] = new RegExp('(^)' + element[k]);
             bool = elements[k].test(score[j][jugelement]);
+
             if (bool) {
               page[i].credit_sum = page[i].credit_sum + parseFloat(score[j].credit);
               category[page[i].No].class1_sum = category[page[i].No].class1_sum + parseFloat(score[j].credit);
@@ -42,25 +45,48 @@ export default class core {
               page[i].about, score[j].number, score[j].name, score[j].credit
               ]; // TODO:備考追加
               count++;
-              let exe = [j];
               score.splice(j, 1); //判定した成績を削除
               j--;
               //判定要素ループまで抜ける
               break;
             };
           };
+
         };
       };
     };
   }
 
-
+  // 必修科目か判定
   isHissyuukamoku(classname) {
-    if (page[i].credit_min > 0) { // 必修科目か判定
+    if (page[i].credit_min > 0) {
       let jugelement = "number";
+    }
+  }
+
+  //  正規表現作成
+  makeReg(word) {
+    word = new RegExp('(^)' + word);
+    bool = elements[k].test(score[j][jugelement]);
+  }
+
+  getMatch(e) {
+
+    if (e) {
+
+      Youken[i].group_sum = Youken[i].group_sum + parseFloat(score[j].credit);
+      category[M_category[i].No].category_sum = M_category[M_category[i].No].category_sum + parseFloat(score[j].credit);
+
+      result[count] = [page[i].class1, page[i].class2, page[i].class3, page[i].about,
+      score[j].number, score[j].name, score[j].credit];
+      
+      
+
     }
 
 
 
-
   }
+
+
+}
