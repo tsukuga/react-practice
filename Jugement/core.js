@@ -64,17 +64,23 @@ export default class core {
 
   }
 
-  isMatch(score,number,name) {
-      
+  Match(score,number,name) {
+
+    // 科目番号のマッチング 
     for (let k = 0; k < number.length; k++){
     
-     number_exp = new RegExp('(^)' + number[k])
+     number_exp = new RegExp('(^)' + number[k]);
+     number_exp.test(score.number);
+    
+    
 
     }
-   
+    // 科目名のマッチング
     for (let k = 0; k < name.length; k++){
     
-     name_exp = new RegExp('(^)' + name[k])
+     name_exp = new RegExp('(^)' + name[k]);
+     name_exp.test(score.name);
+
 
     }
     
@@ -91,6 +97,28 @@ export default class core {
 
 
   }
+　isMatch(element,score){
+ 
+    for (let k = 0; k < element.length; k++){
+    
+     element_exp = new RegExp('(^)' + element[k]);
+     let isMatch = element_exp.test(score[element]);
+    
+     if(isMatch){
+      
+      presentYouken.group_sum = ++parseFloat(score.credit);
+      category[M_category[i].No].category_sum = ++parseFloat(score.credit);
+
+      result[count] = [page[i].class1, page[i].class2, page[i].class3, page[i].about,
+      score[j].number, score[j].name, score[j].credit];
+
+     }
+
+    }
+
+}
+
+
 
 
 }
